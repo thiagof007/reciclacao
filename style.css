@@ -7,3 +7,109 @@
 body{
 	font-size:16px;
 }
+.blockmenu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px 0 58px;
+}
+.blockmenuLogo{
+	height:12vh;
+}
+.menu{
+    min-width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 0px 0 0;
+}
+.menuLink{
+    font: 1.3rem Roboto Slab;
+    font-weight:700;
+    color: #E67816;
+    padding: 0 10px 0 0;
+}
+label{
+	display: none;
+	font-size:2rem;
+	color:#E67816;
+	float: right;
+	margin: 7px 25px 0px 0px;
+}
+#mobilemenu{
+	display: none;
+}
+.blockhome{
+	height:85vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image:url(assets/fundohome.jpg);
+	background-size: cover;
+}
+.blockhomeImage{
+	width:40vw;
+	margin:186px 0 0 0;
+}
+.blockhomeText{
+	width:40vw;
+	font: 2rem Roboto Slab;
+    font-weight:700;
+	color: #fff;
+	text-align: center;
+}
+@media(max-width:768px){
+	label{
+		display:block;
+	}
+
+ 	.menu{
+		display: none;
+	}
+	.menuLink{
+		min-width: 29vw;
+	    display: block;
+    	float: left;
+    	margin-top: 10px;
+    	background-color: #fff;
+	}
+	#mobilemenu:checked ~ .menu{
+		display:block;
+	}
+	.blockmenuLogo{
+		display: none;
+	}
+	.blockmenu{
+		position:absolute;
+		padding: 10px 25px 0 10px;
+	}
+	.blockmenu:hover{
+		background-color:#fff;
+	}
+}
+.containersobre{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 0 0 0;
+}
+.containersobreBlock{
+	width: 60vw;
+    padding: 0px 88px 0 31px;
+}
+.sobreBlock__title{
+    font: 3.6rem Roboto Slab;
+    font-weight:700;
+    color: #00923F;
+}
+.sobreBlock__text{
+	font:1rem Roboto Slab;
+	font-weight:400;
+	margin: 10px 0 23px 0;
+}
+.sobreBlock__link{
+	font:1.6rem Roboto Slab;
+	font-weight:700;
+	color:#E67816;
+}
+.sobreBlock__image{
+	width:40vw;
+}
